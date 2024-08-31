@@ -34,7 +34,7 @@ jobs:
       uses: easingthemes/ssh-deploy@main
       with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SOURCE: "dist/"
+          SOURCE: "target/github-actions-springboot-0.0.1-SNAPSHOT.jar"
           REMOTE_HOST: 180.76.120.166
           REMOTE_USER: root
           TARGET: /root/springboot
