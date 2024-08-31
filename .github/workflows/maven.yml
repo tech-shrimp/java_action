@@ -38,3 +38,6 @@ jobs:
           REMOTE_HOST: 180.76.120.166
           REMOTE_USER: root
           TARGET: /root/springboot/github-actions.jar
+          SCRIPT_AFTER: |
+            pkill -f 'java -jar /root/springboot/github-actions.jar'
+            nohup java -jar /root/springboot/github-actions.jar &
